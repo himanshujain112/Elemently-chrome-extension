@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "Elemently",
+    "version": "1.0",
+    "description": "Edit or remove unwanted elements from a webpage.",
+    "permissions": [
+      "activeTab"
+    ],
+    "browser_action": {
+      "default_icon": "icon.png"
+    },
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"],
+        "css": ["styles.css"]
+      }
+    ]
+  }
