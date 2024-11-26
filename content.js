@@ -22,6 +22,7 @@ function createFloatingBar() {
       <span id="element-editor-icon" title="Edit Element">✏️</span>
       <span id="element-undo-icon" title="Undo">↩️</span>
     </div>
+    <span id='element-editor-title'>Elemently</span>
     <span id="element-close-icon" title="Close">❌</span>
   `;
   document.body.appendChild(bar);
